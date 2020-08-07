@@ -1,0 +1,9 @@
+C:\Users\aies2\source\repos\Negozio\Negozio.Core\bin\Debug\netcoreapp3.1\Negozio.Core.deps.json
+C:\Users\aies2\source\repos\Negozio\Negozio.Core\bin\Debug\netcoreapp3.1\Negozio.Core.dll
+C:\Users\aies2\source\repos\Negozio\Negozio.Core\bin\Debug\netcoreapp3.1\Negozio.Core.pdb
+C:\Users\aies2\source\repos\Negozio\Negozio.Core\obj\Debug\netcoreapp3.1\Negozio.Core.csprojAssemblyReference.cache
+C:\Users\aies2\source\repos\Negozio\Negozio.Core\obj\Debug\netcoreapp3.1\Negozio.Core.AssemblyInfoInputs.cache
+C:\Users\aies2\source\repos\Negozio\Negozio.Core\obj\Debug\netcoreapp3.1\Negozio.Core.AssemblyInfo.cs
+C:\Users\aies2\source\repos\Negozio\Negozio.Core\obj\Debug\netcoreapp3.1\Negozio.Core.csproj.CoreCompileInputs.cache
+C:\Users\aies2\source\repos\Negozio\Negozio.Core\obj\Debug\netcoreapp3.1\Negozio.Core.dll
+C:\Users\aies2\source\repos\Negozio\Negozio.Core\obj\Debug\netcoreapp3.1\Negozio.Core.pdb
