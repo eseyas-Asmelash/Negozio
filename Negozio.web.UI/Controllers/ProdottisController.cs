@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Grpc.Core;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Negozio.Core.Contracts;
 using Negozio.Core.Models;
 using Negozio.Core.ViewModels;
 using Negozio.DataAccess.Sql;
@@ -14,15 +19,18 @@ namespace Negozio.web.UI.Controllers
     public class ProdottisController : Controller
     {
         private readonly DataContext _context;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public ProdottisController(DataContext context)
+        public ProdottisController(DataContext context, IWebHostEnvironment environment)
         {
             _context = context;
+            _hostingEnvironment = environment;
         }
 
         // GET: Prodottis
         public async Task<IActionResult> Index()
         {
+
             return View(await _context.Products.ToListAsync());
         }
 
@@ -48,9 +56,8 @@ namespace Negozio.web.UI.Controllers
         public IActionResult Create()
         {
             ProdottiAmministrazione viewModel = new ProdottiAmministrazione();
-
-            viewModel.Prodotti= new Prodotti();
-            viewModel.CategoriaProdotti = CategoriaProdotti.Collection();
+            viewModel.Prodotti = new Prodotti();
+            viewModel.CategoriaProdotti = _context.ProductCategories;
             return View(viewModel);
 
         }
@@ -60,13 +67,26 @@ namespace Negozio.web.UI.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Name,Description,Price,Category,Image,Id,CreatedAt")] Prodotti prodotti)
+        public async Task<IActionResult> Create([Bind("Name,Description,Price,Category,ImageFile,Id,CreatedAt")] Prodotti prodotti)
         {
-            if (ModelState.IsValid)
+
+            if (ModelState.IsValid) 
             {
-                _context.Add(prodotti);
+                string wwwRootPath = _hostingEnvironment.WebRootPath;
+                string fileName = Path.GetFileName(prodotti.ImageFile.FileName);
+
+                string path = Path.Combine(wwwRootPath + "/Images/", fileName);
+                using (var fileSteam = new FileStream(path, FileMode.Create))
+                {
+                    await prodotti.ImageFile.CopyToAsync(fileSteam);
+                }
+
+
+                    _context.Add(prodotti);
                 await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
+
             }
             return View(prodotti);
         }
@@ -74,17 +94,19 @@ namespace Negozio.web.UI.Controllers
         // GET: Prodottis/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
+            var prodotti = await _context.Products.FindAsync(id);
             if (id == null)
             {
                 return NotFound();
             }
-
-            var prodotti = await _context.Products.FindAsync(id);
-            if (prodotti == null)
+            ProdottiAmministrazione viewModel = new ProdottiAmministrazione();
+            viewModel.Prodotti = prodotti;
+            viewModel.CategoriaProdotti = _context.ProductCategories;
+            if (viewModel == null)
             {
                 return NotFound();
             }
-            return View(prodotti);
+            return View(viewModel);
         }
 
         // POST: Prodottis/Edit/5

@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Products</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -33,7 +33,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                <img class="img-thumbnail" style="height:50px" src="~/Content/ProductImages/@item.Image" />
+                <img class="img-thumbnail" style="height:50px" src="~/Images/@item.Image" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)

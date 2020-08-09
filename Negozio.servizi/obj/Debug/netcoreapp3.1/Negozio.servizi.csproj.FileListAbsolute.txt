@@ -1,9 +1,9 @@
 C:\Users\aies2\source\repos\Negozio\Negozio.servizi\bin\Debug\netcoreapp3.1\Negozio.servizi.deps.json
 C:\Users\aies2\source\repos\Negozio\Negozio.servizi\bin\Debug\netcoreapp3.1\Negozio.servizi.dll
 C:\Users\aies2\source\repos\Negozio\Negozio.servizi\bin\Debug\netcoreapp3.1\Negozio.servizi.pdb
-C:\Users\aies2\source\repos\Negozio\Negozio.servizi\obj\Debug\netcoreapp3.1\Negozio.servizi.csprojAssemblyReference.cache
 C:\Users\aies2\source\repos\Negozio\Negozio.servizi\obj\Debug\netcoreapp3.1\Negozio.servizi.AssemblyInfoInputs.cache
 C:\Users\aies2\source\repos\Negozio\Negozio.servizi\obj\Debug\netcoreapp3.1\Negozio.servizi.AssemblyInfo.cs
 C:\Users\aies2\source\repos\Negozio\Negozio.servizi\obj\Debug\netcoreapp3.1\Negozio.servizi.csproj.CoreCompileInputs.cache
 C:\Users\aies2\source\repos\Negozio\Negozio.servizi\obj\Debug\netcoreapp3.1\Negozio.servizi.dll
 C:\Users\aies2\source\repos\Negozio\Negozio.servizi\obj\Debug\netcoreapp3.1\Negozio.servizi.pdb
+C:\Users\aies2\source\repos\Negozio\Negozio.servizi\obj\Debug\netcoreapp3.1\Negozio.servizi.csprojAssemblyReference.cache

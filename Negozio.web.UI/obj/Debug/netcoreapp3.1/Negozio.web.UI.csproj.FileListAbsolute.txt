@@ -193,6 +193,16 @@ C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\obj\Debug\netcoreapp3.1\Razor
 C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\obj\Debug\netcoreapp3.1\Razor\Views\CategoriaProdottis\Details.cshtml.g.cs
 C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\obj\Debug\netcoreapp3.1\Razor\Views\CategoriaProdottis\Edit.cshtml.g.cs
 C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\obj\Debug\netcoreapp3.1\Razor\Views\CategoriaProdottis\Index.cshtml.g.cs
+C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\bin\Debug\netcoreapp3.1\Grpc.Core.dll
+C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\bin\Debug\netcoreapp3.1\runtimes\linux\native\libgrpc_csharp_ext.x64.so
+C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\bin\Debug\netcoreapp3.1\runtimes\linux\native\libgrpc_csharp_ext.x86.so
+C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\bin\Debug\netcoreapp3.1\runtimes\osx\native\libgrpc_csharp_ext.x64.dylib
+C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\bin\Debug\netcoreapp3.1\runtimes\osx\native\libgrpc_csharp_ext.x86.dylib
+C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\bin\Debug\netcoreapp3.1\runtimes\win\native\grpc_csharp_ext.x64.dll
+C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\bin\Debug\netcoreapp3.1\runtimes\win\native\grpc_csharp_ext.x86.dll
 C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\obj\Debug\netcoreapp3.1\Negozio.web.UI.csproj.CoreCompileInputs.cache
 C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\obj\Debug\netcoreapp3.1\Negozio.web.UI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\aies2\source\repos\Negozio\Negozio.web.UI\obj\Debug\netcoreapp3.1\Negozio.web.UI.MvcApplicationPartsAssemblyInfo.cache

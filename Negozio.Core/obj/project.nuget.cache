@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cGzwqWqzsVn6NvaZ7ESUNgaScv+hNKQs9lbMMN1Oe0FjDcmExWNecA3fym7KD7FH8UUVGZw9n9473351KNgcCw==",
+  "dgSpecHash": "NRB5hbuvsfu6ixTZ9pCiY7iLAUhhpkUUxmmqHT/iVCizrILwr5rOkz+vSykljc7oYoH/wmVbpsL08UJjwvV96A==",
   "success": true,
   "projectFilePath": "C:\\Users\\aies2\\source\\repos\\Negozio\\Negozio.Core\\Negozio.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aies2\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.6\\microsoft.aspnetcore.http.features.3.1.6.nupkg.sha512",
+    "C:\\Users\\aies2\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\microsoft.extensions.primitives.3.1.6.nupkg.sha512",
+    "C:\\Users\\aies2\\.nuget\\packages\\system.io.pipelines\\4.7.1\\system.io.pipelines.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }
